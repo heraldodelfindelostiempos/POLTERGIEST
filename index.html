@@ -1,41 +1,27 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MY BOY — POLTERGIEST</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>POLTERGIEIST — MY BOY</title>
 <style>
-*{box-sizing:border-box}html{background:#050505;color:#eee;font-family:Arial,Helvetica,sans-serif}body{margin:0}
-header{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;border-bottom:1px solid #292929}
-.bird{font-size:clamp(8rem,30vw,22rem);line-height:.8;filter:grayscale(.15)}
-h1{font-size:clamp(4rem,15vw,12rem);line-height:.75;margin:40px 0 15px;letter-spacing:-.08em}
-.sub{font-family:monospace;letter-spacing:.25em;color:#777;font-size:12px}
-section{padding:9vw 5vw}
-.card{max-width:720px;margin:auto;border:1px solid #444;padding:28px;font:14px/1.8 monospace}
-.card b{color:#fff}.card span{color:#888}
-.population{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#333;border:1px solid #333;margin-top:80px}
-.specimen{background:#080808;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.15s}
-.specimen:hover{background:#101010}.specimen .p{font-size:70px}.specimen small{font:10px monospace;color:#777;letter-spacing:.15em}
-footer{padding:120px 20px;text-align:center;font:12px monospace;color:#666;letter-spacing:.25em}
-</style><meta name="build" content="2026-10-02-02"><!-- MY BOY CACHE REFRESH -->
-</head>
-<body>
-<header><div class="bird">🦜</div><h1>MY BOY</h1><div class="sub">POLTERGIEST / SPECIMEN ZERO</div></header>
-<section>
-<div class="card">
-<b>SPECIMEN:</b> MY BOY<br>
-<span>ORIGINAL DESIGNATION:</span> Bird-Man of Aberdeen<br>
-<span>SPECIES:</span> Unknown<br>
-<span>CREATOR:</span> POLTERGIEST<br>
-<span>POPULATION:</span> 22<br>
-<span>COMMERCIAL VALUE:</span> Irrelevant<br>
-<span>PURPOSE:</span> Unknown<br>
-<span>STATUS:</span> MY BOY
-</div>
-<div class="population" id="farm"></div>
-</section>
-<footer>THE MY BOY FARM · 22 IDENTICAL INDIVIDUALS · DO NOT SEPARATE</footer>
-<script>
-const farm=document.querySelector('#farm');
-for(let i=1;i<=22;i++){let d=document.createElement('div');d.className='specimen';d.innerHTML='<div class="p">🦜</div><small>MY BOY '+String(i).padStart(2,'0')+'</small>';farm.appendChild(d)}
-</script>
-</body></html>
+*{box-sizing:border-box}html{background:#050505;color:#e9e9e3;font-family:Arial,Helvetica,sans-serif}body{margin:0;background:radial-gradient(circle at 50% 8%,#171717 0,#050505 36%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background:repeating-linear-gradient(0deg,transparent 0 3px,#fff 4px);z-index:9}
+header{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;border-bottom:1px solid #242424}
+.sig{font:11px monospace;letter-spacing:.55em;color:#777;margin-bottom:8vh}.bird{font-size:clamp(8rem,28vw,21rem);line-height:.75;filter:grayscale(.15) contrast(1.2)}
+h1{font-size:clamp(4rem,16vw,12rem);line-height:.72;margin:45px 0 18px;letter-spacing:-.08em}.chant{font:12px/2 monospace;letter-spacing:.25em;color:#888}
+section{padding:10vw 5vw}.manifesto{max-width:900px;margin:auto;text-align:center;padding:12vh 10px}.manifesto p{font-size:clamp(1.7rem,5vw,4.7rem);font-weight:800;letter-spacing:-.045em;margin:.25em}.manifesto .last{color:#9adf37}
+.rule{max-width:720px;margin:12vh auto;border:1px solid #3c3c3c;padding:30px;font:13px/1.95 monospace;background:#080808}.rule strong{color:#9adf37}.rule span{color:#777}
+h2{text-align:center;font-size:clamp(2.5rem,8vw,7rem);letter-spacing:-.06em;margin:0 0 60px}.population{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:1px;background:#292929;border:1px solid #292929;max-width:1200px;margin:auto}.specimen{background:#070707;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.2s}.specimen:hover{background:#111}.specimen .p{font-size:68px}.specimen small{font:10px monospace;color:#777;letter-spacing:.15em}
+.archive{max-width:1100px;margin:auto}.relics{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.relic{border:1px solid #292929;padding:22px;min-height:180px;background:#080808}.relic b{display:block;font-size:20px;margin-bottom:12px}.relic small{font:11px/1.7 monospace;color:#777}.relic.holy{border-color:#657f14}.relic.holy b{color:#9adf37}
+footer{padding:18vh 20px;text-align:center;font:11px/2 monospace;color:#666;letter-spacing:.28em}
+</style></head><body>
+<header><div class="sig">POLTERGIEST PRESENTS</div><div class="bird">🦜</div><h1>MY BOY</h1><div class="chant">THE FARM / POPULATION 22 / PURPOSE UNKNOWN</div></header>
+<section class="manifesto"><p>THERE ARE 22.</p><p>THERE HAVE ALWAYS BEEN 22.</p><p>DO NOT ASK WHY.</p><p class="last">MY BOY.</p></section>
+<section><div class="rule"><strong>ORDER: POLTERGIEST</strong><br><span>FOUNDER:</span> POLTERGIEST<br><span>THE HEAD:</span> Haunted Mann-Bird of Aberdeen<br><span>SPECIMEN ZERO:</span> MY BOY<br><span>THE BOYS:</span> 21<br><span>TOTAL POPULATION:</span> 22<br><span>COMMERCIAL VALUE:</span> IRRELEVANT<br><span>TRANSFER:</span> FORBIDDEN<br><span>DOCTRINE:</span> OBSERVE. DO NOT POSSESS.<br><span>STATUS:</span> MY BOY</div></section>
+<section><h2>THE BOYS</h2><div class="population" id="farm"></div></section>
+<section class="archive"><h2>RELICS</h2><div class="relics">
+<div class="relic holy"><b>THE HEAD</b><small>HAUNTED MANN-BIRD OF ABERDEEN<br>LEVEL 34 BIRD HEAD<br>A DISTINCTIVE LACK OF HUE<br>HALLOWEEN / FULL MOON</small></div>
+<div class="relic"><b>THE HAND-ME-DOWN</b><small>HAUNTED HORSEMANN'S HAND-ME-DOWN<br>LEVEL 66 CAPE<br>HALLOWEEN / FULL MOON</small></div>
+<div class="relic"><b>THE SOUL</b><small>HAUNTED VOODOO-CURSED DEMOMAN SOUL<br>LEVEL 1 CURSED SOUL<br>HALLOWEEN / FULL MOON</small></div>
+<div class="relic"><b>GHOST TOWN</b><small>STRANGE SPECIALIZED KILLSTREAK<br>GRENADE LAUNCHER<br>203 RECORDED KILLS<br>VILLAINOUS VIOLET</small></div>
+<div class="relic"><b>PINK ELEPHANT</b><small>STRANGE SPECIALIZED KILLSTREAK<br>STICKYBOMB LAUNCHER<br>HOT ROD</small></div>
+<div class="relic"><b>BAT OUTTA HELL</b><small>SPECIALIZED KILLSTREAK<br>LEVEL 5 SKULL BAT<br>VILLAINOUS VIOLET</small></div>
+</div></section>
+<footer>POLTERGIEST DIGITAL ORDER<br><br>THEY ARE NOT FOR SALE · THEY ARE NOT FOR YOU · YOU MAY LOOK<br><br>MY BOY</footer>
+<script>const f=document.querySelector('#farm');for(let i=1;i<=22;i++){const d=document.createElement('div');d.className='specimen';d.innerHTML='<div class="p">🦜</div><small>MY BOY '+String(i).padStart(2,'0')+'</small>';f.appendChild(d)}</script></body></html>
