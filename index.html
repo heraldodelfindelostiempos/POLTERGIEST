@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MY BOY — POLTERGIEST</title>
+<style>
+*{box-sizing:border-box}html{background:#050505;color:#eee;font-family:Arial,Helvetica,sans-serif}body{margin:0}
+header{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;border-bottom:1px solid #292929}
+.bird{font-size:clamp(8rem,30vw,22rem);line-height:.8;filter:grayscale(.15)}
+h1{font-size:clamp(4rem,15vw,12rem);line-height:.75;margin:40px 0 15px;letter-spacing:-.08em}
+.sub{font-family:monospace;letter-spacing:.25em;color:#777;font-size:12px}
+section{padding:9vw 5vw}
+.card{max-width:720px;margin:auto;border:1px solid #444;padding:28px;font:14px/1.8 monospace}
+.card b{color:#fff}.card span{color:#888}
+.population{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:#333;border:1px solid #333;margin-top:80px}
+.specimen{background:#080808;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:.15s}
+.specimen:hover{background:#101010}.specimen .p{font-size:70px}.specimen small{font:10px monospace;color:#777;letter-spacing:.15em}
+footer{padding:120px 20px;text-align:center;font:12px monospace;color:#666;letter-spacing:.25em}
+</style></head>
+<body>
+<header><div class="bird">🦜</div><h1>MY BOY</h1><div class="sub">POLTERGIEST / SPECIMEN ZERO</div></header>
+<section>
+<div class="card">
+<b>SPECIMEN:</b> MY BOY<br>
+<span>ORIGINAL DESIGNATION:</span> Bird-Man of Aberdeen<br>
+<span>SPECIES:</span> Unknown<br>
+<span>CREATOR:</span> POLTERGIEST<br>
+<span>POPULATION:</span> 22<br>
+<span>COMMERCIAL VALUE:</span> Irrelevant<br>
+<span>PURPOSE:</span> Unknown<br>
+<span>STATUS:</span> MY BOY
+</div>
+<div class="population" id="farm"></div>
+</section>
+<footer>THE MY BOY FARM · 22 IDENTICAL INDIVIDUALS · DO NOT SEPARATE</footer>
+<script>
+const farm=document.querySelector('#farm');
+for(let i=1;i<=22;i++){let d=document.createElement('div');d.className='specimen';d.innerHTML='<div class="p">🦜</div><small>MY BOY '+String(i).padStart(2,'0')+'</small>';farm.appendChild(d)}
+</script>
+</body></html>
